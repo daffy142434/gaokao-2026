@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>Test</title>
+<script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+</head>
+<body>
+<div id="app">
+  <p>{{msg}}</p>
+  <button @click="inc()">{{count}}</button>
+</div>
+<script>
+const { createApp, ref } = Vue;
+createApp({
+  setup() {
+    const msg = ref('Hello');
+    const count = ref(0);
+    function inc() { count.value++; }
+    return { msg, count, inc };
+  }
+}).mount('#app');
+</script>
+</body>
+</html>

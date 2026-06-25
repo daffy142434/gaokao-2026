@@ -1,0 +1,672 @@
+[
+  {
+    "province": "广东",
+    "year": 2026,
+    "type": "历史类",
+    "batch": "特控线",
+    "score": 546,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "广东",
+    "year": 2026,
+    "type": "历史类",
+    "batch": "本科线",
+    "score": 440,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "广东",
+    "year": 2026,
+    "type": "历史类",
+    "batch": "专科线",
+    "score": 200,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "广东",
+    "year": 2026,
+    "type": "物理类",
+    "batch": "特控线",
+    "score": 539,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "广东",
+    "year": 2026,
+    "type": "物理类",
+    "batch": "本科线",
+    "score": 425,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "广东",
+    "year": 2026,
+    "type": "物理类",
+    "batch": "专科线",
+    "score": 200,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "江苏",
+    "year": 2026,
+    "type": "历史类",
+    "batch": "特控线",
+    "score": 532,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "江苏",
+    "year": 2026,
+    "type": "历史类",
+    "batch": "本科线",
+    "score": 484,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "江苏",
+    "year": 2026,
+    "type": "物理类",
+    "batch": "特控线",
+    "score": 513,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "江苏",
+    "year": 2026,
+    "type": "物理类",
+    "batch": "本科线",
+    "score": 456,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "河北",
+    "year": 2026,
+    "type": "历史类",
+    "batch": "特控线",
+    "score": 542,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "河北",
+    "year": 2026,
+    "type": "历史类",
+    "batch": "本科线",
+    "score": 485,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "河北",
+    "year": 2026,
+    "type": "历史类",
+    "batch": "专科线",
+    "score": 200,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "河北",
+    "year": 2026,
+    "type": "物理类",
+    "batch": "特控线",
+    "score": 510,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "河北",
+    "year": 2026,
+    "type": "物理类",
+    "batch": "本科线",
+    "score": 443,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "河北",
+    "year": 2026,
+    "type": "物理类",
+    "batch": "专科线",
+    "score": 200,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "重庆",
+    "year": 2026,
+    "type": "历史类",
+    "batch": "特控线",
+    "score": 510,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "重庆",
+    "year": 2026,
+    "type": "历史类",
+    "batch": "本科线",
+    "score": 415,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "重庆",
+    "year": 2026,
+    "type": "历史类",
+    "batch": "专科线",
+    "score": 180,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "重庆",
+    "year": 2026,
+    "type": "物理类",
+    "batch": "特控线",
+    "score": 496,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "重庆",
+    "year": 2026,
+    "type": "物理类",
+    "batch": "本科线",
+    "score": 406,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "重庆",
+    "year": 2026,
+    "type": "物理类",
+    "batch": "专科线",
+    "score": 180,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "福建",
+    "year": 2026,
+    "type": "历史类",
+    "batch": "特控线",
+    "score": 533,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "福建",
+    "year": 2026,
+    "type": "历史类",
+    "batch": "本科线",
+    "score": 458,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "福建",
+    "year": 2026,
+    "type": "历史类",
+    "batch": "专科线",
+    "score": 235,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "福建",
+    "year": 2026,
+    "type": "物理类",
+    "batch": "特控线",
+    "score": 528,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "福建",
+    "year": 2026,
+    "type": "物理类",
+    "batch": "本科线",
+    "score": 446,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "福建",
+    "year": 2026,
+    "type": "物理类",
+    "batch": "专科线",
+    "score": 235,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "天津",
+    "year": 2026,
+    "type": "综合",
+    "batch": "特控线",
+    "score": 547,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "天津",
+    "year": 2026,
+    "type": "综合",
+    "batch": "本科线",
+    "score": 458,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "上海",
+    "year": 2026,
+    "type": "综合",
+    "batch": "特控线",
+    "score": 504,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "上海",
+    "year": 2026,
+    "type": "综合",
+    "batch": "本科线",
+    "score": 403,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "内蒙古",
+    "year": 2026,
+    "type": "历史类",
+    "batch": "特控线",
+    "score": 512,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "内蒙古",
+    "year": 2026,
+    "type": "历史类",
+    "batch": "本科线",
+    "score": 403,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "内蒙古",
+    "year": 2026,
+    "type": "历史类",
+    "batch": "专科线",
+    "score": 160,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "内蒙古",
+    "year": 2026,
+    "type": "物理类",
+    "batch": "特控线",
+    "score": 488,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "内蒙古",
+    "year": 2026,
+    "type": "物理类",
+    "batch": "本科线",
+    "score": 363,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "内蒙古",
+    "year": 2026,
+    "type": "物理类",
+    "batch": "专科线",
+    "score": 160,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "新疆",
+    "year": 2026,
+    "type": "文科",
+    "batch": "本科一批",
+    "score": 451,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "新疆",
+    "year": 2026,
+    "type": "文科",
+    "batch": "本科二批",
+    "score": 315,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "新疆",
+    "year": 2026,
+    "type": "文科",
+    "batch": "专科线",
+    "score": 140,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "新疆",
+    "year": 2026,
+    "type": "理科",
+    "batch": "本科一批",
+    "score": 468,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "新疆",
+    "year": 2026,
+    "type": "理科",
+    "batch": "本科二批",
+    "score": 304,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "新疆",
+    "year": 2026,
+    "type": "理科",
+    "batch": "专科线",
+    "score": 140,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "北京",
+    "year": 2026,
+    "type": "综合",
+    "batch": "特控线",
+    "score": null,
+    "status": "待更新",
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "北京",
+    "year": 2026,
+    "type": "综合",
+    "batch": "本科线",
+    "score": null,
+    "status": "待更新",
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "辽宁",
+    "year": 2026,
+    "type": "历史类",
+    "batch": "特控线",
+    "score": null,
+    "status": "待更新",
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "辽宁",
+    "year": 2026,
+    "type": "历史类",
+    "batch": "本科线",
+    "score": null,
+    "status": "待更新",
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "辽宁",
+    "year": 2026,
+    "type": "物理类",
+    "batch": "特控线",
+    "score": null,
+    "status": "待更新",
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "辽宁",
+    "year": 2026,
+    "type": "物理类",
+    "batch": "本科线",
+    "score": null,
+    "status": "待更新",
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "四川",
+    "year": 2026,
+    "type": "文科",
+    "batch": "本科一批",
+    "score": null,
+    "status": "待更新",
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "四川",
+    "year": 2026,
+    "type": "文科",
+    "batch": "本科二批",
+    "score": null,
+    "status": "待更新",
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "四川",
+    "year": 2026,
+    "type": "理科",
+    "batch": "本科一批",
+    "score": null,
+    "status": "待更新",
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "四川",
+    "year": 2026,
+    "type": "理科",
+    "batch": "本科二批",
+    "score": null,
+    "status": "待更新",
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "山东",
+    "year": 2026,
+    "type": "综合",
+    "batch": "特控线",
+    "score": null,
+    "status": "待更新",
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "山东",
+    "year": 2026,
+    "type": "综合",
+    "batch": "本科线",
+    "score": null,
+    "status": "待更新",
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "河南",
+    "year": 2026,
+    "type": "文科",
+    "batch": "本科一批",
+    "score": null,
+    "status": "待更新",
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "河南",
+    "year": 2026,
+    "type": "文科",
+    "batch": "本科二批",
+    "score": null,
+    "status": "待更新",
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "河南",
+    "year": 2026,
+    "type": "理科",
+    "batch": "本科一批",
+    "score": null,
+    "status": "待更新",
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "河南",
+    "year": 2026,
+    "type": "理科",
+    "batch": "本科二批",
+    "score": null,
+    "status": "待更新",
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "湖南",
+    "year": 2026,
+    "type": "历史类",
+    "batch": "特控线",
+    "score": null,
+    "status": "待更新",
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "湖南",
+    "year": 2026,
+    "type": "历史类",
+    "batch": "本科线",
+    "score": null,
+    "status": "待更新",
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "湖南",
+    "year": 2026,
+    "type": "物理类",
+    "batch": "特控线",
+    "score": null,
+    "status": "待更新",
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "湖南",
+    "year": 2026,
+    "type": "物理类",
+    "batch": "本科线",
+    "score": null,
+    "status": "待更新",
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "湖北",
+    "year": 2026,
+    "type": "历史类",
+    "batch": "特控线",
+    "score": null,
+    "status": "待更新",
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "湖北",
+    "year": 2026,
+    "type": "历史类",
+    "batch": "本科线",
+    "score": null,
+    "status": "待更新",
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "湖北",
+    "year": 2026,
+    "type": "物理类",
+    "batch": "特控线",
+    "score": null,
+    "status": "待更新",
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "湖北",
+    "year": 2026,
+    "type": "物理类",
+    "batch": "本科线",
+    "score": null,
+    "status": "待更新",
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "浙江",
+    "year": 2026,
+    "type": "综合",
+    "batch": "特控线",
+    "score": null,
+    "status": "待更新",
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "浙江",
+    "year": 2026,
+    "type": "综合",
+    "batch": "本科线",
+    "score": null,
+    "status": "待更新",
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "安徽",
+    "year": 2026,
+    "type": "历史类",
+    "batch": "特控线",
+    "score": null,
+    "status": "待更新",
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "安徽",
+    "year": 2026,
+    "type": "历史类",
+    "batch": "本科线",
+    "score": null,
+    "status": "待更新",
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "安徽",
+    "year": 2026,
+    "type": "物理类",
+    "batch": "特控线",
+    "score": null,
+    "status": "待更新",
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "安徽",
+    "year": 2026,
+    "type": "物理类",
+    "batch": "本科线",
+    "score": null,
+    "status": "待更新",
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "新疆",
+    "year": 2026,
+    "type": "物理类",
+    "batch": "本科一批",
+    "score": 468,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "新疆",
+    "year": 2026,
+    "type": "历史类",
+    "batch": "本科一批",
+    "score": 451,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "新疆",
+    "year": 2026,
+    "type": "历史类",
+    "batch": "本科二批",
+    "score": 315,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "新疆",
+    "year": 2026,
+    "type": "历史类",
+    "batch": "专科线",
+    "score": 140,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "新疆",
+    "year": 2026,
+    "type": "物理类",
+    "batch": "本科二批",
+    "score": 304,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  },
+  {
+    "province": "新疆",
+    "year": 2026,
+    "type": "物理类",
+    "batch": "专科线",
+    "score": 140,
+    "source": "https://gaokao.chsi.com.cn/z/gkbmfslq/pcx.jsp"
+  }
+]

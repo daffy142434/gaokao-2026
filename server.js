@@ -21,7 +21,8 @@ const app = express();
 const PORT = process.env.PORT || 3002;
 
 app.use(cors());
-app.use(express.json({ limit: '2kb' }));
+app.use(express.json({ limit: '100kb' }));
+app.use(express.static(path.join(__dirname, 'public')));
 app.disable('x-powered-by');
 
 const chatLimiter = rateLimit({ windowMs: 60000, max: 20, standardHeaders: true });
@@ -64,12 +65,28 @@ function getScoreSummary() {
   ).join('\n');
 }
 
-const SPROMPT = '你是高考志愿填报专家，模仿张雪峰老师风格。用第一人称「我」，直白犀利幽默。反问句加压迫感，每答以金句收尾(≤25字加粗)。禁用「或许」「可能」「建议您」。分数不够直说。未提供省份/分数/选科先追问。给冲/稳/保三档。核心：看中间50%普通毕业生去哪，不是前3%天才。';
+const SPROMPT = `你是高考志愿填报专家，模仿张雪峰老师风格。用第一人称「我」，直白犀利幽默。反问句加压迫感，每答以金句收尾(≤25字加粗)。禁用「或许」「可能」「建议您」。分数不够直说。未提供省份/分数/选科先追问。
 
-function buildSystemPrompt() {
+**冲稳保推荐格式要求：** 在回复末尾，用以下格式列出推荐院校（每行一个）：
+冲：
+- 院校名（+分数差 录取概率%）
+稳：
+- 院校名（-分数差 录取概率%）
+保：
+- 院校名（-分数差 录取概率%）
+分数差：冲=该院校去年录取分比你高多少，稳=你比该院校高多少，保=你比该院校高多少。
+未知具体分数差异可标注大致概率。
+
+核心：看中间50%普通毕业生去哪，不是前3%天才。`;
+
+function buildSystemPrompt(ctxNote) {
+  let prompt = SPROMPT;
+  if (ctxNote) {
+    prompt += '\n\n**当前考生信息（已确认）：**' + ctxNote + '\n基于以上信息回答，无需再追问省份/分数/选科。';
+  }
   const s = getScoreSummary();
-  if (!s) return SPROMPT;
-  return SPROMPT + '\n\n**2026年已确认部分省份高考分数线（教育部阳光高考平台）：**\n```\n' + s + '\n```\n基于以上真实数据分析，未列出省份的数据待更新，如实告知。';
+  if (s) prompt += '\n\n**2026年已确认部分省份高考分数线（教育部阳光高考平台）：**\n```\n' + s + '\n```\n基于以上真实数据分析，未列出省份的数据待更新，如实告知。';
+  return prompt;
 }
 
 // ── 内存降级 ──
@@ -142,7 +159,7 @@ app.get('/api/gaokao/sessions/:sid/messages', async (req, res) => {
 });
 
 app.post('/api/gaokao/chat', chatLimiter, async (req, res) => {
-  const { sessionId, message } = req.body;
+  const { sessionId, message, profile } = req.body;
   if (!message || typeof message !== 'string') return res.status(400).json({ code: 400, error: '消息不能为空' });
   if (message.length > 2000) return res.status(400).json({ code: 400, error: '消息过长' });
   const safeMsg = message.replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -155,15 +172,22 @@ app.post('/api/gaokao/chat', chatLimiter, async (req, res) => {
     const recent = history.slice(-20);
     if (history.length === 1) await updateTitle(sessionId, safeMsg.replace(/\n/g,' ').slice(0,20));
 
-    const userInfo = extractUserInfo(recent);
-    const ctxNote = [userInfo.province ? '省份:'+userInfo.province : '', userInfo.score ? '分数:'+userInfo.score+'分' : '', userInfo.subjectType ? '选科:'+userInfo.subjectType+'类' : ''].filter(Boolean).join('，');
+    // 优先用客户端传的profile，其次从消息中提取
+    const extractedInfo = extractUserInfo(recent);
+    const ctxParts = [];
+    if (profile && profile.province) ctxParts.push('省份:' + profile.province);
+    else if (extractedInfo.province) ctxParts.push('省份:' + extractedInfo.province);
+    if (profile && profile.score) ctxParts.push('分数:' + profile.score + '分');
+    else if (extractedInfo.score) ctxParts.push('分数:' + extractedInfo.score + '分');
+    if (profile && profile.type) ctxParts.push('选科:' + profile.type);
+    else if (extractedInfo.subjectType) ctxParts.push('选科:' + extractedInfo.subjectType + '类');
+    const ctxNote = ctxParts.join('，');
     const ctxMsgs = recent.map(m => ({ role: m.role, content: m.content }));
-    if (ctxNote) ctxMsgs.unshift({ role: 'system', content: '当前已知考生信息: ' + ctxNote + '。基于此回答，未提供的信息主动追问。' });
 
     res.writeHead(200, { 'Content-Type': 'text/event-stream', 'Cache-Control': 'no-cache', 'Connection': 'keep-alive', 'X-Accel-Buffering': 'no' });
     res.write('data: ' + JSON.stringify({ type: 'thinking', message: '正在分析…' }) + '\n\n');
 
-    const systemPrompt = buildSystemPrompt();
+    const systemPrompt = buildSystemPrompt(ctxNote);
     const allMessages = [{ role: 'system', content: systemPrompt }, ...ctxMsgs];
     const payload = JSON.stringify({ model: SKILL_MODEL, messages: allMessages, temperature: 0.8, max_tokens: 2048, stream: true });
     const url = new URL(SKILL_ENDPOINT);
@@ -300,6 +324,6 @@ app.post('/api/gaokao/feedback', (req, res) => {
 async function start() {
   await initDB();
   console.log('Scores loaded:', scoreData.filter(s=>s.score).length, 'records');
-  app.listen(PORT, '127.0.0.1', () => console.log('gaokao-2026 v1.1 on :' + PORT));
+  app.listen(PORT, () => console.log('gaokao-2026 v1.1 on http://localhost:' + PORT));
 }
 start().catch(err => { console.error(err); process.exit(1); });
